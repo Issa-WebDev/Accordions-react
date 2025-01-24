@@ -7,7 +7,7 @@ const App = () => {
       <h1 className="text-center text-3xl font-extrabold">Accordions</h1>
       <div className="w-[400px] bg-[#222] text-white">
         {accordionData.map(({ id, title, content }) => (
-          <Accordion key={id} id={id} title={title} content={content} />
+          <Accordion key={id} title={title} content={content} />
         ))}
       </div>
     </div>

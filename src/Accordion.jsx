@@ -6,14 +6,14 @@ const Accordion = ({ title, content }) => {
   return (
     <section>
       <header
-        className="border-b flex w-full p-3 cursor-pointer"
-        onClick={() => setIsOpen(!isOpen)}
+        className="border-b flex w-full p-6 cursor-pointer"
+        onClick={() => setIsOpen((isOpen) => !isOpen)}
       >
         <h1 className="flex-1">{title}</h1>
-        <p className="text-lg font-bold">{isOpen ? "-" : "+"}</p>
+        <p className="text-3xl font-bold">{isOpen ? "-" : "+"}</p>
       </header>
 
-      {isOpen && <p className="border-b flex w-full p-3 transition-all duration-500">{content}</p>}
+      {isOpen && <p className="border-b flex w-full p-6">{content}</p>}
     </section>
   );
 };
